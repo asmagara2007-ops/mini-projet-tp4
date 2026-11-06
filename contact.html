@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact / Inscription - Tourisme Tunisie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="entete">
+        <h1>Contactez-nous / Inscrivez-vous</h1>
+    </header>
+
+    <nav class="navigation">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services ; Villes</a>
+        <a href="produits.html">Destinations</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <p>Envoyez-nous un email directement à : <a href="mailto:contact@tunisie.tn">contact@tunisie.tn</a></p>
+        <p>Tél : 71 458 367</p>
+        <p>Réservez votre voyage :</p>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <fieldset>
+                <legend>1 – Vos coordonnées</legend>
+
+                <label for="nom">Nom * :</label>
+                <input type="text" id="nom" name="nom" required autofocus maxlength="50" placeholder="Votre nom"><br>
+
+                <label for="prenom">Prénom * :</label>
+                <input type="text" id="prenom" name="prenom" required maxlength="50" placeholder="Votre prénom"><br>
+
+                <label for="naissance">Date de naissance :</label>
+                <input type="date" id="naissance" name="naissance"><br>
+
+                <label for="email">Adresse email * :</label>
+                <input type="email" id="email" name="email" required placeholder="exemple@email.com"><br>
+
+                <label for="site">Site web :</label>
+                <input type="url" id="site" name="site" value="http://www." placeholder="https://monsite.com"><br>
+
+                <label for="mdp">Code secret :</label>
+                <input type="password" id="mdp" name="mdp" minlength="6" maxlength="20"><br>
+
+                <span>Genre :</span>
+                <input type="radio" id="homme" name="genre" value="homme" checked>
+                <label for="homme">Homme</label>
+                <input type="radio" id="femme" name="genre" value="femme">
+                <label for="femme">Femme</label><br>
+
+                <span>Nationalité :</span>
+                <input type="radio" id="tunisien" name="nationalite" value="tunisien" checked>
+                <label for="tunisien">Tunisien</label>
+                <input type="radio" id="etranger" name="nationalite" value="etranger">
+                <label for="etranger">Étranger</label><br>
+
+                <label for="pays">Pays :</label>
+                <select id="pays" name="pays">
+                    <option value="tunisie">Tunisie</option>
+                    <option value="france">France</option>
+                    <option value="algerie">Algérie</option>
+                    <option value="maroc">Maroc</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>2 – Informations complémentaires</legend>
+
+                <label for="tel">Téléphone :</label>
+                <input type="tel" id="tel" name="tel" pattern="[0-9]{8}" placeholder="12345678"><br>
+
+                <label for="adresse">Adresse postale :</label>
+                <input type="text" id="adresse" name="adresse" placeholder="Votre adresse"><br>
+
+                <label for="cp">Code postal :</label>
+                <input type="text" id="cp" name="cp" value="1000" maxlength="4"><br>
+
+                <label for="semestre">Semestre :</label>
+                <select id="semestre" name="semestre">
+                    <option value="s1">S1</option>
+                    <option value="s2">S2</option>
+                    <option value="s3">S3</option>
+                    <option value="s4">S4</option>
+                </select><br>
+
+                <label for="region">Région préférée :</label>
+                <select id="region" name="region">
+                    <option value="tunis">Tunis</option>
+                    <option value="sousse">Sousse</option>
+                    <option value="sfax">Sfax</option>
+                    <option value="djerba">Djerba</option>
+                    <option value="tozeur">Tozeur</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>3 – Goûts et centres d’intérêt</legend>
+
+                <span>Centres d’intérêt :</span>
+                <input type="checkbox" id="culture" name="interet" value="culture" checked>
+                <label for="culture">Culture</label>
+                <input type="checkbox" id="gastronomie" name="interet" value="gastronomie">
+                <label for="gastronomie">Gastronomie</label>
+                <input type="checkbox" id="plage" name="interet" value="plage">
+                <label for="plage">Plage</label>
+                <input type="checkbox" id="desert" name="interet" value="desert">
+                <label for="desert">Désert</label>
+                <input type="checkbox" id="histoire" name="interet" value="histoire">
+                <label for="histoire">Histoire</label><br>
+
+                <label for="destination">Destination :</label>
+                <select id="destination" name="destination">
+                    <option value="sidi-bou-said">Sidi Bou Saïd</option>
+                    <option value="tozeur">Tozeur</option>
+                    <option value="hammamet">Hammamet</option>
+                </select><br>
+
+                <label for="date-dispo">Date disponible :</label>
+                <select id="date-dispo" name="date-dispo">
+                    <option value="2026-05-15">15/05/2026</option>
+                    <option value="2026-06-18">18/06/2026</option>
+                    <option value="2026-09-14">14/09/2026</option>
+                </select><br>
+
+                <label for="duree">Durée du voyage :</label>
+                <select id="duree" name="duree">
+                    <option value="5j">5 jours / prix = 300 DT</option>
+                    <option value="10j">10 jours / prix = 700 DT</option>
+                    <option value="15j">15 jours / prix = 1200 DT</option>
+                </select><br>
+
+                <label for="date-resa">Date de réservation :</label>
+                <input type="date" id="date-resa" name="date-resa"><br>
+
+                <label for="heure-resa">Heure de réservation :</label>
+                <input type="time" id="heure-resa" name="heure-resa"><br>
+
+                <label for="personnes">Nombre de personnes :</label>
+                <input type="number" id="personnes" name="personnes" min="1" max="20" step="1"><br>
+
+                <label for="niveau">Niveau en HTML :</label>
+                <input type="range" id="niveau" name="niveau" min="0" max="100" step="10"><br>
+
+                <label for="note">Note de satisfaction :</label>
+                <input type="number" id="note" name="note" min="1" max="10" step="1"><br>
+
+                <label for="message">Message / Commentaire :</label><br>
+                <textarea id="message" name="message" rows="5" cols="40" placeholder="Écrivez votre demande ou votre avis sur le site..."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>4 – Photo</legend>
+
+                <label for="photo">Photo de profil :</label>
+                <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Effacer">
+            </fieldset>
+        </form>
+
+        <p><a href="index.html">Retour à l’accueil</a></p>
+    </main>
+
+    <footer class="pied">
+        <p>&copy; 2026 - Tourisme Tunisie</p>
+    </footer>
+</body>
+</html>

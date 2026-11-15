@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  color:  #333333;
+  background-color: #fdf6e3;
+}
+
+
+.entete {
+  background-color: #1f6f8b;
+  padding: 25px;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center; 
+  margin: 0;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #1f6f8b;
+  text-align: center;
+}
+
+h3 {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: normal;
+  color: #c0392b;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+ul, ol {
+  line-height: 1.8;
+}
+
+
+.navigation {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  background-color: #14485c;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.navigation a:hover {
+  background-color: #c0392b;
+  border-radius: 5px;
+}
+
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 15px;
+}
+
+main.large {
+  max-width: 1100px;
+}
+
+main a {
+  color: #c0392b;
+}
+
+
+section {
+  background-color: #ffffff;
+  border: 3px solid #1f6f8b;
+  padding: 25px;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+}
+
+caption {
+  font-weight: bold;
+  color: #1f6f8b;
+  padding: 8px;
+}
+
+th, td {
+  border: 1px solid #1f6f8b;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #1f6f8b;
+  color: white;
+}
+
+td img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+}
+
+
+form {
+  background-color: #ffffff;
+  border: 2px solid #1f6f8b;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+fieldset {
+  border: 2px solid #1f6f8b;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  line-height: 2.2;
+}
+
+legend {
+  color: #c0392b;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+label {
+  font-weight: bold;
+  color: #14485c;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  font-weight: normal;
+  margin-right: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+  padding: 8px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #1f6f8b;
+  background-color: #eef7fa;
+}
+
+textarea {
+  max-width: 100%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background-color: #c0392b;
+}
+
+input[type="reset"] {
+  background-color: #7f8c8d;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  opacity: 0.85;
+}
+
+
+.bouton {
+  display: inline-block;
+  background-color: #c0392b;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+.pied {
+  background-color: #14485c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 35px;
+}
+
+.pied p {
+  margin: 0;
+  color: white;
+}
+
+.produit{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.produit h3 {
+  color: #c0392b;
+  font-size: 22px;
+}
+
+
+.titre-section {
+  text-align: center;
+}
+
+.liste-produits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.carte-produit {
+  flex: 1 1 250px;
+  max-width: 320px;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+
+.carte-produit img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+
+@media (max-width: 600px) {
+  .navigation {
+    flex-directio: column;
+    align-items: center;
+  }
+
+  .liste-produits {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .carte-produit {
+    max-width: 100%;
+  }
+}
+   

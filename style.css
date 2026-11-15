@@ -50,6 +50,7 @@ ul, ol {
 
 
 .navigation {
+  align-items: center;
   flex-direction: column;
   display: flex;
   flex-wrap: wrap;

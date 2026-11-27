@@ -227,7 +227,7 @@ input[type="reset"]:hover {
 
 
 .pied {
-  background-color: #14485c;
+  background-color: #306073;
   color: white;
   text-align: center;
   padding: 15px;
@@ -298,4 +298,8 @@ input[type="reset"]:hover {
     max-width: 100%;
   }
 }
-   
+  h1 {
+    color: aquamarine;
+    font-weight: 400;
+    font-size: 24px;
+  }
